@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form{
+        background-color: snow;
+        padding: 30px 25px;
+        border-radius: 10px;
+        width: 320px;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        font-weight: bold;
+    }
+
+    .form-control{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #000;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    details{
+        text-align: center;
+    }
+
+    #btn2{
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        background-color: chartreuse;
+        margin-top: 16px;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    #result{
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+        border-radius: 6px;
+        background-color: azure;
+        padding: 5px;
+    }
+
+    h1{
+        background-color: burlywood;
+        border: #000 solid;
+        border-radius: 5px;
+        padding: 5px;
+        align-items: center;
+
+    }
+</style>
+<body>
+
+    <form>
+        <h1>Basic Calculator 2.0</h1>
+
+        <details>
+        <summary>Instructions</summary>
+        <p> Enter your two values and click on the green button. </p>
+        </details>
+
+        <br>
+
+        <label> Enter 1st Number: </label>
+        <input type="number" class="form-control" id="num1" placeholder="input any number 1 to 100">
+
+        <label> Enter 2nd Number: </label>
+        <input type="number" class="form-control" id="num2" placeholder="input any number 1 to 100">
+
+        <br>
+
+        <button type="button" id="btn2" class="btn btn-success" onclick="sapphire()"> Click For Answer </button>
+
+    </form>
+
+    <script>
+        function sapphire(){
+            let sap1 = document.getElementById("num1").value;
+            let sap2 = document.getElementById("num2").value;
+            let ops = Number(sap1) - Number(sap2);
+
+            window.alert("The difference is " + ops);
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
