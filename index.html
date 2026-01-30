@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h3> JAVASCRIPT OPERATORS </h3>
+    <p id="Answer"></p>
+
+    <script>
+        let a = 10;
+        let b = 5;
+
+        let x = 3;
+        let y = 3;
+
+        let p = true
+        let o = false
+
+        document.getElementById("Answer").innerHTML = 
+        "Arithmetic Operator: <br>" + 
+        "a + b = " + (a + b)  + "<br>" +
+        "a - b = "+(a-b) + "<br><br>" +
+
+        "Comparison Operator: <br>"+
+        "x==y : " + (x==y) + "<br>" +
+        "x!=y : " + (x!=y) + "<br><br>" +
+
+        "Logical Operator: <br>" + 
+        "p && o : " + (p&&o) + "<br>" +
+        "p || o :" + (p||o);
+    </script>
+    
+</body>
+</html>
